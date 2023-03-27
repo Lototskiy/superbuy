@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Text">
+    <title>Home</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="icon" type="image/png" href="assets/images/png/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/png/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&amp;family=PT+Sans:wght@400;700&amp;family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link href="assets/css/app.css?v=1664954553582" rel="stylesheet"></head>
+  <body>
+<div class="preloader">
+  <div class="preloader-logo"><img src="assets/images/svg/logo-preload.svg" alt=""></div>
+  <div class="preloader-line">
+    <div class="preloader-loading"></div>
+  </div>
+</div>
+<script>
+  let preloader = document.querySelector('.preloader');
+  if (!(document.referrer.indexOf("superbay-wp") == -1) || !(location.href.indexOf('localhost') == -1)) {
+    preloader.remove();
+  }
+  
+  
+  document.addEventListener('DOMContentLoaded', function(){
+    if (preloader) {
+  
+      setTimeout(function () {
+        preloader.classList.add('preloader--hide');
+      }, window.PRELOADER_DELAY - 1800 );
+  
+      setTimeout(function () {
+        preloader.style.display = 'none';
+      }, window.PRELOADER_DELAY );
+  
+    }
+  });
+</script>
+    <header class="header header--bg">
+      <div class="center-wrap">
+        <div class="header__wrap"><a class="header__logo single-anchors img-wrap logo-anchors" href="index.html#home">
+            <div><img src="assets/images/svg/logo.svg" alt=""></div></a>
+          <nav class="header__nav mobile--hide">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a class="header__nav-link" href="/">Как это работает</a></li>
+              <li class="header__nav-item header__nav-item--drop"><a class="header__nav-link" href="#">Каталог</a>
+                <div class="header__drop">
+                  <ul class="header__drop-list">
+                    <li class="header__drop-item"> <a class="header__drop-link" href="">Nike   </a></li>
+                    <li class="header__drop-item"> <a class="header__drop-link" href="">Zara</a></li>
+                    <li class="header__drop-item"> <a class="header__drop-link" href="">Adidas</a></li>
+                    <li class="header__drop-item"> <a class="header__drop-link" href="">GUCCI</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link--color" href="/about.html">Распродажа</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="/about.html">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="header__btns mobile--hide">
+            <div class="header__btn btn btn--empty">Вход</div>
+            <div class="header__btn btn">Начать покупки</div>
+          </div>
+          <div class="header__burger desktop--hide">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="scrollbar">
+      <main>
+<section class="main-screen at-block" id="home">
+  <div class="main-screen__bg"></div>
+  <div class="main-screen__wrap">
+    <div class="main-screen__left">
+      <h2 class="main-screen__simple-title simple-title simple-title--left at-element" data-at-name="atTitle"><strong>Покупай</strong> оригинальные бренды всех магазинов мира, в 2 раза выгоднее, чем в Казахстане</h2>
+      <div class="main-screen__content conten at-element" data-at-name="atText">
+        <p><strong>Superbay</strong> - это сервис, собравший бренды со всего мира по низкой цене. И доставляя Вам их быстро и дешево.</p>
+      </div>
+      <div class="main-screen__btns"> <a class="main-screen__btn btn" href="">Каталог</a><a class="main-screen__btn btn main-screen__btn--active" href="">Как купить?</a></div>
+    </div>
+    <div class="main-screen__right">
+      <div class="main-screen__mac img-wrap">
+        <div>
+          <picture><img src="assets/images/png/Macbook1.png" alt=""></picture>
+        </div>
+        <div class="main-screen__slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/images/png/steps-img2.png" alt=""></div>
+              <div class="swiper-slide"><img src="assets/images/png/steps-img3.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-screen__iph img-wrap">
+        <div>
+          <picture><img src="assets/images/png/iPhone2.png" alt=""></picture>
+        </div><img src="assets/images/png/steps-img2.png" alt=""><a class="main-screen__basket" href="">
+          <svg viewBox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.28575 9.71934L30.186 17.3476C30.4445 17.4386 30.6773 17.5907 30.8644 17.7909C31.0515 17.9911 31.1875 18.2336 31.2608 18.4977C31.3342 18.7617 31.3427 19.0396 31.2856 19.3076C31.2285 19.5757 31.1075 19.826 30.9329 20.0372L21.6598 31.183C21.2071 31.7243 20.4648 31.9312 19.7965 31.6984L6.9762 27.2329C6.33038 27.0079 5.88109 26.4148 5.84035 25.7321L4.59452 4.83969L0.854195 3.53687L1.97058 0.331795L5.7093 1.63406C6.34289 1.85314 6.89716 2.25541 7.30188 2.78987C7.70659 3.32432 7.94351 3.9669 7.98261 4.63616L8.28575 9.71934ZM17.2217 23.6137L20.4267 24.7301L21.5431 21.525L18.338 20.4086L19.4544 17.2035L16.2493 16.0871L15.133 19.2922L11.9279 18.1758L10.8115 21.3809L14.0166 22.4973L12.9002 25.7024L16.1053 26.8187L17.2217 23.6137ZM5.54436 33.9223C6.87194 34.3847 8.32303 33.6833 8.78545 32.3557C9.24787 31.0282 8.54652 29.5771 7.21893 29.1146C5.89135 28.6522 4.44026 29.3536 3.97784 30.6812C3.51542 32.0088 4.21677 33.4598 5.54436 33.9223ZM16.7617 37.8294C18.0893 38.2919 19.5404 37.5905 20.0028 36.2629C20.4652 34.9353 19.7639 33.4843 18.4363 33.0218C17.1087 32.5594 15.6576 33.2608 15.1952 34.5884C14.7328 35.9159 15.4341 37.367 16.7617 37.8294Z" fill="white"></path>
+          </svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="brands">
+  <div class="brands__ticker ticker ticker--active">
+    <div class="ticker__row">
+      <div class="ticker__row-wrap"> 
+        <!-- min количество брендов 6--><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor1.svg" alt=""></a><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor2.svg" alt=""></a><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor3.svg" alt=""></a><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor4.svg" alt=""></a><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor5.svg" alt=""></a><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor3.svg" alt=""></a>
+      </div>
+      <div class="ticker__row-wrap"> 
+        <!-- min количество брендов 6--><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor1.svg" alt=""></a><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor2.svg" alt=""></a><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor3.svg" alt=""></a><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor4.svg" alt=""></a><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor5.svg" alt=""></a><a class="ticker__row-img" href="" target="_blank"><img src="assets/images/svg/brands-imgColor3.svg" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <div class="center-wrap">
+    <div class="brands__info mobile--hide"><a class="info-bl" href="#">И еще более 10.000 магазинов!</a></div>
+  </div>
+</div>
+<section class="advantages">
+  <div class="center-wrap at-block">
+    <div class="advantages__small-title small-title">Преимущества SuperBuy</div>
+    <h2 class="advantages__simple-title simple-title simple-title--left at-element" data-at-name="atTitle">
+      <p>Я получу брендовую вещь в 2 раза дешевле, чем купив её же в Казахстане? </p>
+    </h2>
+    <div class="advantages__wrap at-element" data-at-name="atItems2" data-at-custom="true">
+      <div class="advantages__box"> 
+        <div class="advantages__box-top"> 
+          <svg viewBox="0 0 67 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0151075 20.3784L0 15.9617C0 12.7395 2.60906 11.8784 5.65019 11.009L43.5141 0.170178C46.176 -0.58815 48.3333 1.25906 48.3333 4.29515V19.4756L0.0166182 20.3784H0.0151075Z" fill="#87BBFD"></path>
+            <path d="M56.95 58H10.05C4.49954 58 0 54.2538 0 49.6326V18.9523H0.005025V16C0.005025 16 0.564475 18.7431 4.288 18.9523H56.95C62.5005 18.9523 67 22.6985 67 27.3197V49.6326C67 54.2538 62.5005 58 56.95 58ZM55.2683 34.2925C53.935 34.2917 52.656 34.7322 51.7129 35.5168C50.7698 36.3015 50.24 37.3661 50.24 38.4761C50.2427 40.7862 52.4937 42.6572 55.2683 42.6556C56.6013 42.6571 57.8804 42.2176 58.8241 41.4337C59.7677 40.6499 60.2987 39.586 60.3 38.4761C60.3 37.3656 59.7697 36.3006 58.8258 35.5159C57.882 34.7311 56.6022 34.291 55.2683 34.2925Z" fill="#6772E5"></path>
+          </svg>
+          <p>Выгодная цена</p>
+        </div>
+        <div class="advantages__box-list"> 
+          <div class="advantages__box-item">Акционные товары и распродажи.</div>
+          <div class="advantages__box-item">Любой товар в 2 раза дешевле, чем в Казахстане.</div>
+          <div class="advantages__box-item">Та же самая вещь на западе дешевле, чем у нас в стране!</div>
+          <div class="advantages__box-item">Вещи из разных магазинов в одной поссылке по цене одной доставки.</div>
+        </div>
+      </div>
+      <div class="advantages__box"> 
+        <div class="advantages__box-top advantages__box-top--center"> 
+          <svg width="69" height="64" viewBox="0 0 69 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.90572 0C3.0918 0 0 3.26931 0 7.30222V32.86C0 36.8928 3.0918 40.1622 6.90572 40.1622H48.3401C52.1539 40.1622 55.2458 36.8928 55.2458 32.86V7.30222C55.2458 3.26931 52.1539 0 48.3401 0H6.90572ZM6.47412 7.30222C5.75901 7.30222 5.17929 7.91523 5.17929 8.67139V11.4097C5.17929 12.1659 5.75901 12.7789 6.47412 12.7789H48.7717C49.4868 12.7789 50.0665 12.1659 50.0665 11.4097V8.67139C50.0665 7.91523 49.4868 7.30222 48.7717 7.30222H6.47412Z" fill="#7A73FF"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4344 51.1155C45.1767 51.1155 48.6101 49.7164 51.2923 47.3861L53.5936 49.8194C52.9203 50.5324 52.9205 51.6876 53.5945 52.4003L63.6083 62.9891C64.2825 63.702 65.3756 63.702 66.0498 62.9891L68.4943 60.4043C69.1686 59.6914 69.1686 58.5355 68.4943 57.8226L58.4804 47.2336C57.8066 46.5211 56.7141 46.5208 56.0398 47.2327L53.7058 44.7648C55.753 41.9819 56.9722 38.4843 56.9722 34.6855C56.9722 25.6114 50.0158 18.2555 41.4344 18.2555C32.853 18.2555 25.8965 25.6114 25.8965 34.6855C25.8965 43.7596 32.853 51.1155 41.4344 51.1155ZM41.4344 45.6388C47.1552 45.6388 51.7929 40.7348 51.7929 34.6855C51.7929 28.6361 47.1552 23.7322 41.4344 23.7322C35.7135 23.7322 31.0758 28.6361 31.0758 34.6855C31.0758 40.7348 35.7135 45.6388 41.4344 45.6388Z" fill="black"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4344 51.1155C45.1767 51.1155 48.6101 49.7164 51.2923 47.3861L53.5936 49.8194C52.9203 50.5324 52.9205 51.6876 53.5945 52.4003L63.6083 62.9891C64.2825 63.702 65.3756 63.702 66.0498 62.9891L68.4943 60.4043C69.1686 59.6914 69.1686 58.5355 68.4943 57.8226L58.4804 47.2336C57.8066 46.5211 56.7141 46.5208 56.0398 47.2327L53.7058 44.7648C55.753 41.9819 56.9722 38.4843 56.9722 34.6855C56.9722 25.6114 50.0158 18.2555 41.4344 18.2555C32.853 18.2555 25.8965 25.6114 25.8965 34.6855C25.8965 43.7596 32.853 51.1155 41.4344 51.1155ZM41.4344 45.6388C47.1552 45.6388 51.7929 40.7348 51.7929 34.6855C51.7929 28.6361 47.1552 23.7322 41.4344 23.7322C35.7135 23.7322 31.0758 28.6361 31.0758 34.6855C31.0758 40.7348 35.7135 45.6388 41.4344 45.6388Z" fill="#80E9FF"></path>
+          </svg>
+          <p>Оригинал и уникальность</p>
+        </div>
+        <div class="advantages__box-list"> 
+          <div class="advantages__box-item">Исключительно оригинальные вещи</div>
+          <div class="advantages__box-item">Бренды и вещи, которые не найти в Казахстане.</div>
+          <div class="advantages__box-item">Более 1000 магазинов мира, наличие всех брендов;</div>
+          <div class="advantages__box-item">Новые колекции со всего мира.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="steps">
+  <div class="center-wrap at-block">
+    <div class="steps__small-title small-title">Три простых шага</div>
+    <h2 class="steps__simple-title simple-title--left simple-title at-element" data-at-name="atTitle">Как это работает?</h2>
+    <div class="steps__wrap at-element" data-at-name="atItems3" data-at-custom="true">
+      <div class="steps__left">
+        <div class="steps__item"> 
+          <div class="steps__item-number">01</div>
+          <div class="steps__item-title">Регистрируйтесь!</div>
+          <div class="steps__item-content content"> 
+            <p>Всего в 1 клик</p>
+          </div>
+        </div>
+        <div class="steps__item"> 
+          <div class="steps__item-number">02</div>
+          <div class="steps__item-title">Покупайте</div>
+          <div class="steps__item-content content"> 
+            <p>Каталог всех магазинов мира.</p>
+          </div>
+        </div>
+        <div class="steps__item"> 
+          <div class="steps__item-number">03</div>
+          <div class="steps__item-title">Получайте!</div>
+          <div class="steps__item-content content"> 
+            <p>Все в одной посылке.</p>
+          </div>
+        </div>
+        <div class="steps__item steps__item--btn">
+          <div class="btn btn--bg">Подробнее</div>
+        </div>
+      </div>
+      <div class="steps__right img-wrap img-parallax">
+        <div>
+          <picture><img src="assets/images/png/steps-img2.png" alt=""></picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="choice">
+  <div class="center-wrap at-block">
+    <div class="choice__small-title small-title">Выбери</div>
+    <h2 class="choice__simple-title simple-title--left simple-title">Более 1000, исключительно оригинальных магазинов</h2>
+    <div class="choice__grid"> <a class="choice__grid-item img-parallax choice__grid-item--big" href="">
+        <picture>
+          <source srcset="assets/images/png/сhoice-img1--mobile.png" type="image/webp" media="(max-width: 1024px)"><img src="assets/images/png/сhoice-img1.png" alt="">
+        </picture></a><a class="choice__grid-item img-parallax" href=""> 
+        <picture><img src="assets/images/png/сhoice-img2.png" alt=""></picture></a><a class="choice__grid-item img-parallax" href=""> 
+        <picture><img src="assets/images/png/сhoice-img3.png" alt=""></picture></a><a class="choice__grid-item img-parallax" href=""> 
+        <picture><img src="assets/images/png/сhoice-img4.png" alt=""></picture></a><a class="choice__grid-item img-parallax" href=""> 
+        <picture><img src="assets/images/png/сhoice-img5.png" alt=""></picture></a><a class="choice__grid-item img-parallax" href=""> 
+        <picture><img src="assets/images/png/сhoice-img6.png" alt=""></picture></a><a class="choice__grid-item" href="">
+        <div class="choice__link">
+          <p>Все магазины</p>
+          <svg viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.4596 5.95962C20.7135 5.70578 20.7135 5.29422 20.4596 5.04038L16.323 0.903806C16.0692 0.649965 15.6576 0.649965 15.4038 0.903806C15.15 1.15765 15.15 1.5692 15.4038 1.82304L19.0808 5.5L15.4038 9.17696C15.15 9.4308 15.15 9.84235 15.4038 10.0962C15.6576 10.35 16.0692 10.35 16.323 10.0962L20.4596 5.95962ZM0 6.15H20V4.85H0V6.15Z" fill="white" fill-opacity="0.8"></path>
+          </svg>
+        </div></a></div>
+    <div class="choice__info mobile--hide"> <a class="info-bl" href="#">Дешевая и быстрая доставка со всего мира!</a></div>
+  </div>
+</section>
+<section class="faq">
+  <div class="center-wrap toogles toogles--fade at-block">
+    <h1 class="faq__simple-title simple-title--left simple-title at-element" data-at-name="atTitle">Популярные вопросы <br> наших клиентов и партнеров</h1>
+    <div class="faq__top">
+      <div class="faq__top-item toogles__item-title btn" data-toogles="1">
+        <p>Клиентам</p>
+      </div>
+      <div class="faq__top-item toogles__item-title toogles__item-title--active btn" data-toogles="2">
+        <p>Партнерам</p>
+      </div>
+    </div>
+    <div class="faq__body toogles2"> 
+      <div class="faq__body-tab">
+        <div class="toogles__item" data-toogles="1">
+          <div class="toogles__item-content">
+            <div>
+              <div class="faq__body-wrap">
+                <div class="toogles2__column">
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="1">
+                      <p>Зачем нужен посредник, если можно <br class="mobile--hide"> заказать доставку напрямую из магазина?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="1">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="2">
+                      <p>Почему товар получается в 2-3 раза дешевле?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="2">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="3">
+                      <p>Чем отличается шопинг от магазинов в Казахстане?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="3">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="toogles2__column">
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="4">
+                      <p>Зачем нужен посредник, если можно <br class="mobile--hide"> заказать доставку напрямую из магазина?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="4">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="5">
+                      <p>Почему товар получается в 2-3 раза дешевле?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="5">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="6">
+                      <p>Как начать совершать покупки?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="6">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                            <p>Почти все интернет-магазины осуществляют доставку только </p>
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq__body-tab">
+        <div class="toogles__item toogles__item--active" data-toogles="2">
+          <div class="toogles__item-content" style="display: block;">
+            <div>
+              <div class="faq__body-wrap">
+                <div class="toogles2__column">
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="7">
+                      <p>Зачем нужен посредник, если можно <br class="mobile--hide"> заказать доставку напрямую из магазина?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="7">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="8">
+                      <p>Почему товар получается в 2-3 раза дешевле?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="8">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="9">
+                      <p>Чем отличается шопинг от магазинов в Казахстане?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="9">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="toogles2__column">
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="10">
+                      <p>Зачем нужен посредник, если можно <br class="mobile--hide"> заказать доставку напрямую из магазина?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="10">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="11">
+                      <p>Почему товар получается в 2-3 раза дешевле?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="11">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq__body-item">
+                    <div class="faq__body-top toogles2__item-title" data-toogles2="12">
+                      <p>Как начать совершать покупки?</p><span></span>
+                    </div>
+                    <div class="toogles2__item" data-toogles2="12">
+                      <div class="toogles2__item-content">
+                        <div>
+                          <div class="faq__content content"> 
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы. Теперь границы — больше не препятствие для вас. Вы легко найдете нужные вещи и сможете сэкономить в 2–3 раза при покупке любых товаров: от рубашек и игрушек до топовых смартфонов и ноутбуков.</p>
+                            <p>Почти все интернет-магазины осуществляют доставку только </p>
+                            <p>Почти все интернет-магазины осуществляют доставку только внутри страны. Superbay доставляет товары из Европы.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="reviews" id="reviews">
+  <div class="center-wrap at-block"> 
+    <div class="reviews__small-title small-title">Отзывы</div>
+    <h2 class="reviews__simple-title simple-title simple-title--left at-element" data-at-name="atTitle">О выгодных покупках с Superbuy</h2>
+  </div>
+  <div class="reviews-slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="reviews-slider__item"> 
+            <svg class="reviews-slider__quotes" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.02881 20H8.7251C9.33305 20 9.82646 19.4921 9.82646 18.8662V11.9726C9.82646 11.3467 9.33305 10.8388 8.7251 10.8388H5.52013C5.56198 9.03374 5.96949 7.58928 6.74044 6.50309C7.34839 5.64593 8.26911 4.93616 9.50046 4.37606C10.0666 4.11981 10.3111 3.43046 10.0467 2.85446L9.25375 1.13106C8.99824 0.577784 8.36605 0.335123 7.81978 0.577782C6.36157 1.22632 5.13023 2.0472 4.1258 3.04496C2.90107 4.26268 2.06185 5.63686 1.60809 7.16977C1.1543 8.70269 0.927444 10.7934 0.927444 13.4466V18.8662C0.927444 19.492 1.42088 20 2.02881 20Z" fill="#DBDBDB"></path>
+              <path d="M20.5017 0.578773C19.0057 1.22516 17.7339 2.04617 16.684 3.04187C15.4007 4.2598 14.5246 5.6297 14.0534 7.15155C13.5822 8.67341 13.3466 10.7713 13.3466 13.4454V18.866C13.3466 19.492 13.859 20 14.4903 20H21.4442C22.0755 20 22.5879 19.492 22.5879 18.866V11.9711C22.5879 11.3451 22.0755 10.8371 21.4442 10.8371H18.1159C18.1594 9.03174 18.5826 7.58702 19.3832 6.50063C20.0145 5.64331 20.9707 4.93341 22.2493 4.3732C22.8372 4.11692 23.0911 3.42743 22.8166 2.85133L21.9954 1.13215C21.7301 0.578773 21.069 0.333803 20.5017 0.578773Z" fill="#DBDBDB"></path>
+            </svg>
+            <div class="reviews-slider__content content"> 
+              <p>Приятно удивлена сервисом, так как пришлось поработать с многими подобными компаниями, но эти ребята лучшие в своей сфере.</p>
+            </div>
+            <div class="reviews-slider__row"> 
+              <div class="reviews-slider__row-img img-wrap">
+                <div>
+                  <picture><img src="assets/images/png/reviews-slider-img1.png" alt=""></picture>
+                </div><a class="socials__link" href="" target="_blank">
+                  <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28"></circle>
+                    <g clip-path="url(#clip0_234_115f)">
+                      <path d="M31.7454 30.1176L32.2898 26.1189H28.9474V23.5198C28.9474 22.4264 29.4155 21.358 30.9125 21.358H32.4313V17.9529C31.531 17.7869 30.6213 17.6971 29.7095 17.6842C26.955 17.6842 25.1585 19.6023 25.1585 23.0699V26.1189H22.0938V30.1176H25.1585V39.7895H28.9474V30.1176H31.7454Z"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_234_115f">
+                        <rect width="10.3158" height="22.1053" fill="white" transform="translate(22.1052 17.6842)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg></a>
+              </div>
+              <div class="reviews-slider__row-box"> 
+                <div class="reviews-slider__row-name">Катерина маргалиева</div>
+                <div class="reviews-slider__row-info">Купила сумку michael kors</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-slider__item"> 
+            <svg class="reviews-slider__quotes" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.02881 20H8.7251C9.33305 20 9.82646 19.4921 9.82646 18.8662V11.9726C9.82646 11.3467 9.33305 10.8388 8.7251 10.8388H5.52013C5.56198 9.03374 5.96949 7.58928 6.74044 6.50309C7.34839 5.64593 8.26911 4.93616 9.50046 4.37606C10.0666 4.11981 10.3111 3.43046 10.0467 2.85446L9.25375 1.13106C8.99824 0.577784 8.36605 0.335123 7.81978 0.577782C6.36157 1.22632 5.13023 2.0472 4.1258 3.04496C2.90107 4.26268 2.06185 5.63686 1.60809 7.16977C1.1543 8.70269 0.927444 10.7934 0.927444 13.4466V18.8662C0.927444 19.492 1.42088 20 2.02881 20Z" fill="#DBDBDB"></path>
+              <path d="M20.5017 0.578773C19.0057 1.22516 17.7339 2.04617 16.684 3.04187C15.4007 4.2598 14.5246 5.6297 14.0534 7.15155C13.5822 8.67341 13.3466 10.7713 13.3466 13.4454V18.866C13.3466 19.492 13.859 20 14.4903 20H21.4442C22.0755 20 22.5879 19.492 22.5879 18.866V11.9711C22.5879 11.3451 22.0755 10.8371 21.4442 10.8371H18.1159C18.1594 9.03174 18.5826 7.58702 19.3832 6.50063C20.0145 5.64331 20.9707 4.93341 22.2493 4.3732C22.8372 4.11692 23.0911 3.42743 22.8166 2.85133L21.9954 1.13215C21.7301 0.578773 21.069 0.333803 20.5017 0.578773Z" fill="#DBDBDB"></path>
+            </svg>
+            <div class="reviews-slider__content content"> 
+              <p>Приятно удивлена сервисом, так как пришлось поработать с многими подобными компаниями, но эти ребята лучшие в своей сфере.</p>
+            </div>
+            <div class="reviews-slider__row"> 
+              <div class="reviews-slider__row-img img-wrap">
+                <div>
+                  <picture><img src="assets/images/png/reviews-slider-img2.png" alt=""></picture>
+                </div><a class="socials__link" href="" target="_blank">
+                  <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28"></circle>
+                    <g clip-path="url(#clip0_234_115f)">
+                      <path d="M31.7454 30.1176L32.2898 26.1189H28.9474V23.5198C28.9474 22.4264 29.4155 21.358 30.9125 21.358H32.4313V17.9529C31.531 17.7869 30.6213 17.6971 29.7095 17.6842C26.955 17.6842 25.1585 19.6023 25.1585 23.0699V26.1189H22.0938V30.1176H25.1585V39.7895H28.9474V30.1176H31.7454Z"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_234_115f">
+                        <rect width="10.3158" height="22.1053" fill="white" transform="translate(22.1052 17.6842)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg></a>
+              </div>
+              <div class="reviews-slider__row-box"> 
+                <div class="reviews-slider__row-name">Катерина маргалиева</div>
+                <div class="reviews-slider__row-info">Купила часы guess</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-slider__item"> 
+            <svg class="reviews-slider__quotes" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.02881 20H8.7251C9.33305 20 9.82646 19.4921 9.82646 18.8662V11.9726C9.82646 11.3467 9.33305 10.8388 8.7251 10.8388H5.52013C5.56198 9.03374 5.96949 7.58928 6.74044 6.50309C7.34839 5.64593 8.26911 4.93616 9.50046 4.37606C10.0666 4.11981 10.3111 3.43046 10.0467 2.85446L9.25375 1.13106C8.99824 0.577784 8.36605 0.335123 7.81978 0.577782C6.36157 1.22632 5.13023 2.0472 4.1258 3.04496C2.90107 4.26268 2.06185 5.63686 1.60809 7.16977C1.1543 8.70269 0.927444 10.7934 0.927444 13.4466V18.8662C0.927444 19.492 1.42088 20 2.02881 20Z" fill="#DBDBDB"></path>
+              <path d="M20.5017 0.578773C19.0057 1.22516 17.7339 2.04617 16.684 3.04187C15.4007 4.2598 14.5246 5.6297 14.0534 7.15155C13.5822 8.67341 13.3466 10.7713 13.3466 13.4454V18.866C13.3466 19.492 13.859 20 14.4903 20H21.4442C22.0755 20 22.5879 19.492 22.5879 18.866V11.9711C22.5879 11.3451 22.0755 10.8371 21.4442 10.8371H18.1159C18.1594 9.03174 18.5826 7.58702 19.3832 6.50063C20.0145 5.64331 20.9707 4.93341 22.2493 4.3732C22.8372 4.11692 23.0911 3.42743 22.8166 2.85133L21.9954 1.13215C21.7301 0.578773 21.069 0.333803 20.5017 0.578773Z" fill="#DBDBDB"></path>
+            </svg>
+            <div class="reviews-slider__content content"> 
+              <p>Приятно удивлена сервисом, так как пришлось поработать с многими подобными компаниями, но эти ребята лучшие в своей сфере.</p>
+            </div>
+            <div class="reviews-slider__row"> 
+              <div class="reviews-slider__row-img img-wrap">
+                <div>
+                  <picture><img src="assets/images/png/reviews-slider-img3.png" alt=""></picture>
+                </div><a class="socials__link" href="" target="_blank">
+                  <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28"></circle>
+                    <g clip-path="url(#clip0_234_115f)">
+                      <path d="M31.7454 30.1176L32.2898 26.1189H28.9474V23.5198C28.9474 22.4264 29.4155 21.358 30.9125 21.358H32.4313V17.9529C31.531 17.7869 30.6213 17.6971 29.7095 17.6842C26.955 17.6842 25.1585 19.6023 25.1585 23.0699V26.1189H22.0938V30.1176H25.1585V39.7895H28.9474V30.1176H31.7454Z"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_234_115f">
+                        <rect width="10.3158" height="22.1053" fill="white" transform="translate(22.1052 17.6842)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg></a>
+              </div>
+              <div class="reviews-slider__row-box"> 
+                <div class="reviews-slider__row-name">Катерина маргалиева</div>
+                <div class="reviews-slider__row-info">Купила обувь NIKE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-slider__item"> 
+            <svg class="reviews-slider__quotes" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.02881 20H8.7251C9.33305 20 9.82646 19.4921 9.82646 18.8662V11.9726C9.82646 11.3467 9.33305 10.8388 8.7251 10.8388H5.52013C5.56198 9.03374 5.96949 7.58928 6.74044 6.50309C7.34839 5.64593 8.26911 4.93616 9.50046 4.37606C10.0666 4.11981 10.3111 3.43046 10.0467 2.85446L9.25375 1.13106C8.99824 0.577784 8.36605 0.335123 7.81978 0.577782C6.36157 1.22632 5.13023 2.0472 4.1258 3.04496C2.90107 4.26268 2.06185 5.63686 1.60809 7.16977C1.1543 8.70269 0.927444 10.7934 0.927444 13.4466V18.8662C0.927444 19.492 1.42088 20 2.02881 20Z" fill="#DBDBDB"></path>
+              <path d="M20.5017 0.578773C19.0057 1.22516 17.7339 2.04617 16.684 3.04187C15.4007 4.2598 14.5246 5.6297 14.0534 7.15155C13.5822 8.67341 13.3466 10.7713 13.3466 13.4454V18.866C13.3466 19.492 13.859 20 14.4903 20H21.4442C22.0755 20 22.5879 19.492 22.5879 18.866V11.9711C22.5879 11.3451 22.0755 10.8371 21.4442 10.8371H18.1159C18.1594 9.03174 18.5826 7.58702 19.3832 6.50063C20.0145 5.64331 20.9707 4.93341 22.2493 4.3732C22.8372 4.11692 23.0911 3.42743 22.8166 2.85133L21.9954 1.13215C21.7301 0.578773 21.069 0.333803 20.5017 0.578773Z" fill="#DBDBDB"></path>
+            </svg>
+            <div class="reviews-slider__content content"> 
+              <p>Приятно удивлена сервисом, так как пришлось поработать с многими подобными компаниями, но эти ребята лучшие в своей сфере.</p>
+            </div>
+            <div class="reviews-slider__row"> 
+              <div class="reviews-slider__row-img img-wrap">
+                <div>
+                  <picture><img src="assets/images/png/reviews-slider-img1.png" alt=""></picture>
+                </div><a class="socials__link" href="" target="_blank">
+                  <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28"></circle>
+                    <g clip-path="url(#clip0_234_115f)">
+                      <path d="M31.7454 30.1176L32.2898 26.1189H28.9474V23.5198C28.9474 22.4264 29.4155 21.358 30.9125 21.358H32.4313V17.9529C31.531 17.7869 30.6213 17.6971 29.7095 17.6842C26.955 17.6842 25.1585 19.6023 25.1585 23.0699V26.1189H22.0938V30.1176H25.1585V39.7895H28.9474V30.1176H31.7454Z"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_234_115f">
+                        <rect width="10.3158" height="22.1053" fill="white" transform="translate(22.1052 17.6842)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg></a>
+              </div>
+              <div class="reviews-slider__row-box"> 
+                <div class="reviews-slider__row-name">Катерина маргалиева</div>
+                <div class="reviews-slider__row-info">Купила сумку michael kors</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center-wrap"> 
+      <div class="reviews-slider__pagination">
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="start-shopping">
+          <div class="center-wrap"> 
+            <div class="start-shopping__wrap"> 
+              <div class="start-shopping__left">
+                <div class="start-shopping__img img-wrap img-parallax">
+                  <div>
+                    <picture><img src="assets/images/png/steps-img.png" alt=""></picture>
+                  </div>
+                </div>
+              </div>
+              <div class="start-shopping__right">
+                <h2 class="start-shopping__simple-title simple-title simple-title--left">Начните покупать выгодно за 2 минуты!</h2>
+                <div class="start-shopping__content content"> 
+                  <p>Регистрируйте в один клик! И получайте доступ к каталогу всех брендов мира с прайсом в 2-3 дешевле прямо сейчас!</p>
+                </div>
+                <form class="inputs inputs--email" action="/action_page.php" autocomplete="off">
+                  <div class="inputs__row">
+                    <div class="inputs__field-wrap">
+                      <input class="inputs__field" type="email" name="email" placeholder="Введи свой email" autocomplete="off" required="">
+                    </div>
+                    <button class="btn btn--yellow inputs__btn" type="submit">Регистрация</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="center-wrap">
+          <div class="footer__wrap">
+            <div class="footer__column footer__column--logo"><a class="footer__logo single-anchors img-wrap logo-anchors" href="index.html#home">
+                <div><img src="assets/images/svg/logo-footer.svg" alt=""></div></a>
+              <div class="footer__content content"> 
+                <p>Superbay - это сервис, собравший бренды со всего мира по низкой цене. И доставляя Вам их быстро и дешево.</p>
+              </div>
+            </div>
+            <div class="footer__menu toogles toogles--mobile">
+              <div class="footer__column">
+                <div class="footer__column-title toogles__item-title" data-toogles="1">
+                  <p>Магазин:</p>
+                </div>
+                <div class="toogles__item" data-toogles="1">
+                  <div class="toogles__item-content">
+                    <div>
+                      <ul class="footer__column-list">
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Магазины  </a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Расспродажи</a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Регистрация</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__column">
+                <div class="footer__column-title toogles__item-title" data-toogles="2">
+                  <p>Полезное:</p>
+                </div>
+                <div class="toogles__item" data-toogles="2">
+                  <div class="toogles__item-content">
+                    <div>
+                      <ul class="footer__column-list">
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Услуги   </a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Доставка и оплата</a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link single-anchors" href="index.html#reviews">Отзывы</a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Контакты</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__column">
+                <div class="footer__column-title toogles__item-title" data-toogles="3">
+                  <p>Как это работает</p>
+                </div>
+                <div class="toogles__item" data-toogles="3">
+                  <div class="toogles__item-content">
+                    <div>
+                      <ul class="footer__column-list">
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Как это работает  </a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">FAQ</a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Инструкция</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__column footer__column--socials">
+              <div class="footer__column-title">Мы в соцсетях</div>
+              <div class="footer__socials socials"><a class="socials__link" href="" target="_blank">
+                  <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28"></circle>
+                    <g clip-path="url(#clip0_234_115f)">
+                      <path d="M31.7454 30.1176L32.2898 26.1189H28.9474V23.5198C28.9474 22.4264 29.4155 21.358 30.9125 21.358H32.4313V17.9529C31.531 17.7869 30.6213 17.6971 29.7095 17.6842C26.955 17.6842 25.1585 19.6023 25.1585 23.0699V26.1189H22.0938V30.1176H25.1585V39.7895H28.9474V30.1176H31.7454Z"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_234_115f">
+                        <rect width="10.3158" height="22.1053" fill="white" transform="translate(22.1052 17.6842)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg></a><a class="socials__link" href="" target="_blank">
+                  <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28"></circle>
+                    <g clip-path="url(#clip0_234_119f)">
+                      <path d="M39.6971 21.4537C38.9836 21.7771 38.2336 22.0028 37.4655 22.1252C37.8254 22.0602 38.3499 21.3725 38.5607 21.0964C38.8917 20.675 39.1446 20.1919 39.3063 19.6723C39.3063 19.6343 39.3372 19.5802 39.3063 19.5531C39.2879 19.5436 39.2677 19.5386 39.2472 19.5386C39.2267 19.5386 39.2065 19.5436 39.1881 19.5531C38.3498 20.0288 37.4585 20.3926 36.5348 20.6361C36.503 20.646 36.4692 20.6461 36.4374 20.6365C36.4055 20.6269 36.3769 20.608 36.3548 20.582C36.2843 20.4924 36.2069 20.4091 36.1234 20.3329C35.7385 19.9879 35.3048 19.7084 34.838 19.5044C34.2137 19.2387 33.5403 19.1258 32.8686 19.1741C32.2171 19.214 31.581 19.3985 31.0021 19.7156C30.4207 20.0356 29.9079 20.4779 29.4955 21.0151C29.0656 21.5687 28.7582 22.2161 28.5956 22.9104C28.4527 23.568 28.4352 24.249 28.5442 24.9139C28.5442 25.0276 28.5442 25.0438 28.4568 25.0276C24.8163 24.4861 21.7723 23.0836 19.3453 20.1542C19.2424 20.0296 19.1859 20.0296 19.0984 20.1542C18.0238 21.849 18.5431 24.5673 19.8852 25.8994C20.0618 26.0912 20.249 26.272 20.4456 26.4409C19.831 26.3856 19.2331 26.2015 18.6871 25.8994C18.5791 25.829 18.5277 25.8723 18.5174 25.9968C18.5108 26.178 18.5212 26.3593 18.5482 26.5383C18.6551 27.4012 18.9774 28.2188 19.4824 28.9075C19.9874 29.5963 20.6569 30.1316 21.4226 30.4587C21.6103 30.5444 21.8071 30.6062 22.0088 30.6428C21.4417 30.7629 20.8596 30.783 20.2862 30.7024C20.1577 30.7024 20.1114 30.7403 20.1577 30.8702C20.9187 33.0362 22.5538 33.6914 23.757 34.065C23.9216 34.0921 24.0861 34.0921 24.2712 34.1354C24.2712 34.1354 24.2712 34.1354 24.2712 34.1625C23.865 34.8177 22.451 35.305 21.798 35.5433C20.5943 35.9952 19.3123 36.1688 18.0392 36.0523C17.8387 36.0198 17.7975 36.0198 17.741 36.0523C17.6844 36.0848 17.741 36.1389 17.7975 36.1931C18.0546 36.3718 18.3117 36.5288 18.5791 36.6804C19.3769 37.1308 20.2204 37.485 21.0935 37.7363C25.603 39.0522 30.6884 38.0883 34.077 34.5415C36.7353 31.7583 37.6763 27.9191 37.6763 24.0746C37.6763 23.9229 37.846 23.8417 37.9488 23.7605C38.6228 23.2097 39.2169 22.5585 39.7125 21.8274C39.7918 21.7231 39.8337 21.5927 39.8308 21.4592C39.7897 21.3942 39.7897 21.4104 39.6971 21.4537Z"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_234_119f">
+                        <rect width="22.1053" height="19.1579" transform="translate(17.6843 19.1578)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg></a><a class="socials__link" href="" target="_blank">
+                  <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28"></circle>
+                    <g clip-path="url(#clip0_234_123f)">
+                      <path d="M33.1112 20.153C32.8541 20.153 32.6029 20.2292 32.3892 20.372C32.1754 20.5148 32.0089 20.7178 31.9105 20.9553C31.8121 21.1927 31.7864 21.454 31.8366 21.7061C31.8867 21.9582 32.0105 22.1898 32.1922 22.3715C32.374 22.5533 32.6055 22.6771 32.8576 22.7272C33.1097 22.7774 33.371 22.7516 33.6085 22.6532C33.846 22.5549 34.0489 22.3883 34.1917 22.1746C34.3345 21.9609 34.4107 21.7096 34.4107 21.4526C34.4107 21.1079 34.2738 20.7774 34.0301 20.5337C33.7864 20.2899 33.4558 20.153 33.1112 20.153Z"></path>
+                      <path d="M27.3505 21.8212C26.2727 21.8212 25.2191 22.1409 24.323 22.7399C23.4269 23.3388 22.7287 24.1901 22.3165 25.186C21.9043 26.1818 21.7968 27.2776 22.0075 28.3346C22.2182 29.3917 22.7377 30.3624 23.5003 31.1241C24.2629 31.8858 25.2342 32.4042 26.2915 32.6137C27.3488 32.8232 28.4444 32.7145 29.4398 32.3011C30.4352 31.8878 31.2857 31.1885 31.8836 30.2918C32.4815 29.395 32.8 28.341 32.7988 27.2632C32.7971 25.8193 32.2224 24.4352 31.2008 23.4148C30.1793 22.3944 28.7944 21.8212 27.3505 21.8212ZM27.3505 30.7558C26.6595 30.757 25.9837 30.5533 25.4085 30.1702C24.8333 29.7872 24.3847 29.2422 24.1194 28.6041C23.8541 27.966 23.784 27.2636 23.918 26.5857C24.0521 25.9078 24.3843 25.2848 24.8725 24.7958C25.3607 24.3067 25.983 23.9734 26.6606 23.8382C27.3383 23.7029 28.0409 23.7717 28.6794 24.0359C29.318 24.3 29.8638 24.7477 30.2479 25.3222C30.6319 25.8967 30.8369 26.5722 30.8369 27.2632C30.8394 27.7229 30.7511 28.1786 30.5771 28.6041C30.403 29.0296 30.1467 29.4165 29.8228 29.7428C29.4989 30.069 29.1138 30.3281 28.6895 30.5051C28.2653 30.6822 27.8103 30.7737 27.3505 30.7745V30.7558Z"></path>
+                      <path d="M31.6929 38.3221H22.8458C21.0859 38.3188 19.3992 37.6178 18.1553 36.3728C16.9115 35.1278 16.2121 33.4404 16.2104 31.6805V22.8522C16.2121 21.0923 16.9115 19.4049 18.1553 18.1599C19.3992 16.9149 21.0859 16.2139 22.8458 16.2106H31.6929C33.4538 16.2122 35.1422 16.9125 36.3874 18.1577C37.6325 19.4028 38.3328 21.0912 38.3345 22.8522V31.6805C38.3328 33.4415 37.6325 35.1298 36.3874 36.375C35.1422 37.6202 33.4538 38.3204 31.6929 38.3221ZM22.8458 18.2786C21.6371 18.2819 20.4789 18.7635 19.6243 19.6182C18.7697 20.4728 18.2881 21.631 18.2848 22.8397V31.668C18.2881 32.8766 18.7697 34.0348 19.6243 34.8895C20.4789 35.7441 21.6371 36.2257 22.8458 36.229H31.6929C32.9015 36.2257 34.0597 35.7441 34.9144 34.8895C35.769 34.0348 36.2506 32.8766 36.2539 31.668V22.8522C36.2539 21.6413 35.7738 20.4799 34.9188 19.6226C34.0638 18.7653 32.9037 18.282 31.6929 18.2786H22.8458Z"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_234_123f">
+                        <rect width="22.1053" height="22.1053" fill="white" transform="translate(16.2104 16.2106)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg></a></div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <ul class="footer__bottom-list"> 
+              <li class="footer__bottom-item"> <a class="footer__bottom-link" href="" target="_blank">AGB  </a></li>
+              <li class="footer__bottom-item"> <a class="footer__bottom-link" href="" target="_blank">ЗАЩИТА ДАННЫХ</a></li>
+              <li class="footer__bottom-item"> <a class="footer__bottom-link" href="" target="_blank">ОТПЕЧАТОК</a></li>
+            </ul>
+            <div class="footer__bottom-right">
+              <div class="footer__copyr"> © SERVUSOFT GMBH 2022</div>
+              <div class="footer__developed mobile--hide">
+                <p class="footer__developed-text">Made by</p><a class="footer__developed-link" href="https://atstudio1.com/" target="_blank">A&T.team</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__developed desktop--hide">
+            <p class="footer__developed-text">Made by</p><a class="footer__developed-link" href="https://atstudio1.com/" target="_blank">A&T.team</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+<div class="mobile-menu">
+  <div class="mobile-menu__wrap">
+    <div class="mobile-menu__act mobile-menu__act--close">
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.79" fill-rule="evenodd" clip-rule="evenodd" d="M15 1.5L13.5 0L7.5 6L1.5 0L0 1.5L6 7.5L0 13.5L1.5 15L7.5 9L13.5 15L15 13.5L9 7.5L15 1.5Z" fill="#fff"></path>
+      </svg>
+    </div>
+    <div class="mobile-menu__body"><a class="header__logo single-anchors img-wrap" href="index.html#home">
+        <div><img src="assets/images/svg/logo.svg" alt=""></div></a>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__nav-list toogles">
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Как это работает</a></li>
+          <li class="mobile-menu__nav-item">
+            <div class="mobile-menu__nav-link toogles__item-title" data-toogles="1">
+              <p>Каталог</p>
+            </div>
+            <div class="toogles__item" data-toogles="1">
+              <div class="toogles__item-content">
+                <div>
+                  <div class="mobile-menu__drop"> 
+                    <div class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="">Nike</a></div>
+                    <div class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="">Zara </a></div>
+                    <div class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="">Adidas</a></div>
+                    <div class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="">GUCCI</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Распродажа</a></li>
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">FAQ</a></li>
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="main-screen__btns"> <a class="main-screen__btn btn" href="">Вход</a><a class="main-screen__btn btn main-screen__btn--active" href="">Регистрация</a></div>
+    </div>
+  </div>
+</div>
+<div class="popup-wrap" id="thank-you">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('thank-you')">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup__inner">
+      <div class="popup__simple-title simple-title">Спасибо!</div>
+      <div class="popup__content content"> 
+        <p>Ваша заявка успешно отправлена.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup-wrap" id="card">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('card')">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup__inner">
+      <div class="shops__goods-img img-wrap">
+        <div>
+          <picture><img src="assets/images/png/card-img.png" alt=""></picture>
+        </div>
+      </div>
+      <div class="popup__inner-info">
+        <div class="popup__simple-title simple-title simple-title--left">Доставка из Amazon</div>
+        <div class="shops__rating">      <span class="shops__rating-item shops__rating-item--active">$</span><span class="shops__rating-item shops__rating-item--active">$</span><span class="shops__rating-item">$</span><span class="shops__rating-item">$</span><span class="shops__rating-item">$</span></div>
+        <div class="shops__card-title">Категория: маркетплейс</div>
+        <div class="popup__content content"> 
+          <p>Самый большой гипермаркет планеты, в котором можно купить практически любой товар от чехла для телефона до крупногабаритной техники.</p>
+          <p><strong>Как заказывать на Амазон: правила и рекомендации</strong></p>
+          <p>Amazon – это огромный онлайн-гипермаркет, который предлагает клиентам миллионы разнообразных товаров. Здесь можно приобрести практически все что угодно: одежду, обувь, электронику, бытовую технику, компьютеры, программное обеспечение, книги, фильмы, пластинки и многое другое. Основная проблема заключается в том, что Амазон не доставляет товары в Украину. Разберемся, как обойти это ограничение.</p>
+          <p>Зарегистрироваться на Amazon можно совершенно бесплатно. Процедура стандартная, каких-то проблем у вас не возникнет. Она занимает максимум 5 минут, после чего вы сможете совершать покупки. Отметим, что у гипермаркета есть несколько филиалов в разных странах, например, в Британии, Германии и пр. Но самым популярным является американский сайт. Здесь больше всего товаров и самые приятные цены.</p>
+        </div>
+        <div class="shops__card-btns"> 
+          <div class="btn shops__card-btn">Как заказать?</div><a class="btn shops__card-btn shops__card-btn--active" href="">В магазин</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="js/app.js?v=1664954548924"></script></body>
+</html>

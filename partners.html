@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Text">
+    <title>Partners</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="icon" type="image/png" href="assets/images/png/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/png/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&amp;family=PT+Sans:wght@400;700&amp;family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link href="assets/css/app.css?v=1664954553582" rel="stylesheet"></head>
+  <body>
+<div class="preloader">
+  <div class="preloader-logo"><img src="assets/images/svg/logo-preload.svg" alt=""></div>
+  <div class="preloader-line">
+    <div class="preloader-loading"></div>
+  </div>
+</div>
+<script>
+  let preloader = document.querySelector('.preloader');
+  if (!(document.referrer.indexOf("superbay-wp") == -1) || !(location.href.indexOf('localhost') == -1)) {
+    preloader.remove();
+  }
+  
+  
+  document.addEventListener('DOMContentLoaded', function(){
+    if (preloader) {
+  
+      setTimeout(function () {
+        preloader.classList.add('preloader--hide');
+      }, window.PRELOADER_DELAY - 1800 );
+  
+      setTimeout(function () {
+        preloader.style.display = 'none';
+      }, window.PRELOADER_DELAY );
+  
+    }
+  });
+</script>
+    <header class="header">
+      <div class="center-wrap">
+        <div class="header__wrap"><a class="header__logo single-anchors img-wrap logo-anchors" href="index.html#home">
+            <div><img src="assets/images/svg/logo.svg" alt=""></div></a>
+          <nav class="header__nav mobile--hide">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a class="header__nav-link" href="/">Как это работает</a></li>
+              <li class="header__nav-item header__nav-item--drop"><a class="header__nav-link" href="#">Каталог</a>
+                <div class="header__drop">
+                  <ul class="header__drop-list">
+                    <li class="header__drop-item"> <a class="header__drop-link" href="">Nike   </a></li>
+                    <li class="header__drop-item"> <a class="header__drop-link" href="">Zara</a></li>
+                    <li class="header__drop-item"> <a class="header__drop-link" href="">Adidas</a></li>
+                    <li class="header__drop-item"> <a class="header__drop-link" href="">GUCCI</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link--color" href="/about.html">Распродажа</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="/about.html">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="header__btns mobile--hide">
+            <div class="header__btn btn btn--empty">Вход</div>
+            <div class="header__btn btn">Начать покупки</div>
+          </div>
+          <div class="header__burger desktop--hide">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="scrollbar">
+      <main>
+        <section class="main-bl pt">
+          <div class="center-wrap"> 
+            <h1 class="main-bl__simple-title simple-title">Партнерам</h1>
+            <div class="breadcrumb">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Партнерам</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+<section class="partners">
+  <div class="center-wrap at-block">
+    <div class="partners__small-title small-title">Выгодное партнерство с SuperBuy</div>
+    <h2 class="partners__simple-title simple-title simple-title--left simple-title--weight at-element" data-at-name="atTitle">Мы предлагаем <strong>в 2-3 раза <br> выгодней условия, чем наши конкуренты</strong></h2>
+    <div class="partners__list">
+      <div class="partners__item">
+        <div class="partners__item-top">
+          <div class="partners__item-img img-wrap">
+            <div>
+              <picture><img src="assets/images/png/partners-img1.png" alt=""></picture>
+            </div>
+          </div>
+          <div class="partners__item-title">Удобство использования</div>
+        </div>
+        <div class="partners__item-content content"> 
+          <p>Все ваши посылки, товары и отправки доступны для просмотра и управления с любых устройств, а все действия с ними можно выполнить в несколько кликов.</p>
+        </div>
+      </div>
+      <div class="partners__item">
+        <div class="partners__item-top"> 
+          <div class="partners__item-img img-wrap">
+            <div>
+              <picture><img src="assets/images/png/partners-img2.png" alt=""></picture>
+            </div>
+          </div>
+          <div class="partners__item-title">Индивидуальные условия</div>
+        </div>
+        <div class="partners__item-content content"> 
+          <p>Возможность недорого отправлять посылки конечным покупателям прямо со склада – это удобно и выгодно в условиях снижения таможенного лимита странах.</p>
+        </div>
+      </div>
+      <div class="partners__item">
+        <div class="partners__item-top">
+          <div class="partners__item-img img-wrap">
+            <div>
+              <picture><img src="assets/images/png/partners-img3.png" alt=""></picture>
+            </div>
+          </div>
+          <div class="partners__item-title">Безупречная репутация</div>
+        </div>
+        <div class="partners__item-content content"> 
+          <p>За 12 лет работы мы собрали <a href="">огромное количество положительных отзывов</a>! И мы сделаем все, чтобы стать самым надежным партнером для вас.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="excellence">
+  <div class="center-wrap"> 
+    <div class="excellence__wrap"> 
+      <div class="excellence__left">
+        <h2 class="excellence__simple-title simple-title simple-title--left simple-title--weight"><strong>Почему нас выбирают</strong> <br class="mobile--hide"> партнеры стабильно более 10 лет ?</h2>
+        <div class="excellence__content content"> 
+          <p>Сколько стоит доставка из США в Украину? Рассчитайте доставки в в Украину. Для этого нужно знать вес посылки!</p>
+        </div>
+        <div class="excellence__row">   
+          <div class="excellence__row-title">Абсолютное взаимопонимание</div>
+          <div class="excellence__row-content content"> 
+            <p>Сколько стоит доставка из США в Украину? стоимость доставки в в Украину. Для этого</p>
+          </div>
+        </div>
+      </div>
+      <div class="excellence__right">
+        <div class="excellence__video img-wrap img-parallax">
+          <div>
+            <picture><img src="assets/images/png/excellence-img.png" alt=""></picture><span></span>
+          </div><a class="video fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/YRTrS7CJ3uM">
+            <div class="video__play">
+              <div class="video__play-img"><img src="assets/images/svg/play-video.svg" alt=""></div>
+              <iframe class="video__video" width="100%" height="100%" data-src="https://www.youtube.com/embed/YRTrS7CJ3uM?autoplay=1&amp;mute=1&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="start-shopping">
+          <div class="center-wrap"> 
+            <div class="start-shopping__wrap"> 
+              <div class="start-shopping__left">
+                <div class="start-shopping__img img-wrap img-parallax">
+                  <div>
+                    <picture><img src="assets/images/png/steps-img3.png" alt=""></picture>
+                  </div>
+                </div>
+              </div>
+              <div class="start-shopping__right start-shopping__right--form">
+                <h2 class="start-shopping__simple-title simple-title simple-title--left">Готовы сотрудничать?</h2>
+                <div class="start-shopping__content content"> 
+                  <p>Ваш электронный адрес не будет опубликован</p>
+                </div>
+                <form class="inputs start-shopping__form" action="/action_page.php" autocomplete="off">
+                  <div class="inputs__field-row">
+                    <div class="inputs__field-wrap">
+                      <input class="inputs__field" type="text" name="text" autocomplete="off" required="" minlength="2">
+                      <label class="inputs__label"><span class="inputs__content">Ваше имя*</span></label>
+                    </div>
+                    <div class="inputs__field-wrap">
+                      <input class="inputs__field" type="email" name="email" autocomplete="off" required="">
+                      <label class="inputs__label"><span class="inputs__content">Ваш e-mail*</span></label>
+                    </div>
+                  </div>
+                  <div class="inputs__field-wrap">
+                    <input class="inputs__field" type="number" name="tel" autocomplete="off" required="">
+                    <label class="inputs__label"><span class="inputs__content">Ваш телефон</span></label>
+                  </div>
+                  <div class="inputs__field-wrap inputs__field-wrap--textarea">
+                    <textarea class="inputs__field" name="textarea" required></textarea>
+                    <label class="inputs__label"><span class="inputs__content">Сообщение* </span></label>
+                  </div>
+                  <button class="btn inputs__btn btn--bg" type="submit">Отправить запрос</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="center-wrap">
+          <div class="footer__wrap">
+            <div class="footer__column footer__column--logo"><a class="footer__logo single-anchors img-wrap logo-anchors" href="index.html#home">
+                <div><img src="assets/images/svg/logo-footer.svg" alt=""></div></a>
+              <div class="footer__content content"> 
+                <p>Superbay - это сервис, собравший бренды со всего мира по низкой цене. И доставляя Вам их быстро и дешево.</p>
+              </div>
+            </div>
+            <div class="footer__menu toogles toogles--mobile">
+              <div class="footer__column">
+                <div class="footer__column-title toogles__item-title" data-toogles="1">
+                  <p>Магазин:</p>
+                </div>
+                <div class="toogles__item" data-toogles="1">
+                  <div class="toogles__item-content">
+                    <div>
+                      <ul class="footer__column-list">
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Магазины  </a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Расспродажи</a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Регистрация</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__column">
+                <div class="footer__column-title toogles__item-title" data-toogles="2">
+                  <p>Полезное:</p>
+                </div>
+                <div class="toogles__item" data-toogles="2">
+                  <div class="toogles__item-content">
+                    <div>
+                      <ul class="footer__column-list">
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Услуги   </a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Доставка и оплата</a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link single-anchors" href="index.html#reviews">Отзывы</a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Контакты</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__column">
+                <div class="footer__column-title toogles__item-title" data-toogles="3">
+                  <p>Как это работает</p>
+                </div>
+                <div class="toogles__item" data-toogles="3">
+                  <div class="toogles__item-content">
+                    <div>
+                      <ul class="footer__column-list">
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Как это работает  </a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">FAQ</a></li>
+                        <li class="footer__column-item"> <a class="footer__column-link" href="">Инструкция</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__column footer__column--socials">
+              <div class="footer__column-title">Мы в соцсетях</div>
+              <div class="footer__socials socials"><a class="socials__link" href="" target="_blank">
+                  <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28"></circle>
+                    <g clip-path="url(#clip0_234_115f)">
+                      <path d="M31.7454 30.1176L32.2898 26.1189H28.9474V23.5198C28.9474 22.4264 29.4155 21.358 30.9125 21.358H32.4313V17.9529C31.531 17.7869 30.6213 17.6971 29.7095 17.6842C26.955 17.6842 25.1585 19.6023 25.1585 23.0699V26.1189H22.0938V30.1176H25.1585V39.7895H28.9474V30.1176H31.7454Z"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_234_115f">
+                        <rect width="10.3158" height="22.1053" fill="white" transform="translate(22.1052 17.6842)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg></a><a class="socials__link" href="" target="_blank">
+                  <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28"></circle>
+                    <g clip-path="url(#clip0_234_119f)">
+                      <path d="M39.6971 21.4537C38.9836 21.7771 38.2336 22.0028 37.4655 22.1252C37.8254 22.0602 38.3499 21.3725 38.5607 21.0964C38.8917 20.675 39.1446 20.1919 39.3063 19.6723C39.3063 19.6343 39.3372 19.5802 39.3063 19.5531C39.2879 19.5436 39.2677 19.5386 39.2472 19.5386C39.2267 19.5386 39.2065 19.5436 39.1881 19.5531C38.3498 20.0288 37.4585 20.3926 36.5348 20.6361C36.503 20.646 36.4692 20.6461 36.4374 20.6365C36.4055 20.6269 36.3769 20.608 36.3548 20.582C36.2843 20.4924 36.2069 20.4091 36.1234 20.3329C35.7385 19.9879 35.3048 19.7084 34.838 19.5044C34.2137 19.2387 33.5403 19.1258 32.8686 19.1741C32.2171 19.214 31.581 19.3985 31.0021 19.7156C30.4207 20.0356 29.9079 20.4779 29.4955 21.0151C29.0656 21.5687 28.7582 22.2161 28.5956 22.9104C28.4527 23.568 28.4352 24.249 28.5442 24.9139C28.5442 25.0276 28.5442 25.0438 28.4568 25.0276C24.8163 24.4861 21.7723 23.0836 19.3453 20.1542C19.2424 20.0296 19.1859 20.0296 19.0984 20.1542C18.0238 21.849 18.5431 24.5673 19.8852 25.8994C20.0618 26.0912 20.249 26.272 20.4456 26.4409C19.831 26.3856 19.2331 26.2015 18.6871 25.8994C18.5791 25.829 18.5277 25.8723 18.5174 25.9968C18.5108 26.178 18.5212 26.3593 18.5482 26.5383C18.6551 27.4012 18.9774 28.2188 19.4824 28.9075C19.9874 29.5963 20.6569 30.1316 21.4226 30.4587C21.6103 30.5444 21.8071 30.6062 22.0088 30.6428C21.4417 30.7629 20.8596 30.783 20.2862 30.7024C20.1577 30.7024 20.1114 30.7403 20.1577 30.8702C20.9187 33.0362 22.5538 33.6914 23.757 34.065C23.9216 34.0921 24.0861 34.0921 24.2712 34.1354C24.2712 34.1354 24.2712 34.1354 24.2712 34.1625C23.865 34.8177 22.451 35.305 21.798 35.5433C20.5943 35.9952 19.3123 36.1688 18.0392 36.0523C17.8387 36.0198 17.7975 36.0198 17.741 36.0523C17.6844 36.0848 17.741 36.1389 17.7975 36.1931C18.0546 36.3718 18.3117 36.5288 18.5791 36.6804C19.3769 37.1308 20.2204 37.485 21.0935 37.7363C25.603 39.0522 30.6884 38.0883 34.077 34.5415C36.7353 31.7583 37.6763 27.9191 37.6763 24.0746C37.6763 23.9229 37.846 23.8417 37.9488 23.7605C38.6228 23.2097 39.2169 22.5585 39.7125 21.8274C39.7918 21.7231 39.8337 21.5927 39.8308 21.4592C39.7897 21.3942 39.7897 21.4104 39.6971 21.4537Z"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_234_119f">
+                        <rect width="22.1053" height="19.1579" transform="translate(17.6843 19.1578)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg></a><a class="socials__link" href="" target="_blank">
+                  <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28"></circle>
+                    <g clip-path="url(#clip0_234_123f)">
+                      <path d="M33.1112 20.153C32.8541 20.153 32.6029 20.2292 32.3892 20.372C32.1754 20.5148 32.0089 20.7178 31.9105 20.9553C31.8121 21.1927 31.7864 21.454 31.8366 21.7061C31.8867 21.9582 32.0105 22.1898 32.1922 22.3715C32.374 22.5533 32.6055 22.6771 32.8576 22.7272C33.1097 22.7774 33.371 22.7516 33.6085 22.6532C33.846 22.5549 34.0489 22.3883 34.1917 22.1746C34.3345 21.9609 34.4107 21.7096 34.4107 21.4526C34.4107 21.1079 34.2738 20.7774 34.0301 20.5337C33.7864 20.2899 33.4558 20.153 33.1112 20.153Z"></path>
+                      <path d="M27.3505 21.8212C26.2727 21.8212 25.2191 22.1409 24.323 22.7399C23.4269 23.3388 22.7287 24.1901 22.3165 25.186C21.9043 26.1818 21.7968 27.2776 22.0075 28.3346C22.2182 29.3917 22.7377 30.3624 23.5003 31.1241C24.2629 31.8858 25.2342 32.4042 26.2915 32.6137C27.3488 32.8232 28.4444 32.7145 29.4398 32.3011C30.4352 31.8878 31.2857 31.1885 31.8836 30.2918C32.4815 29.395 32.8 28.341 32.7988 27.2632C32.7971 25.8193 32.2224 24.4352 31.2008 23.4148C30.1793 22.3944 28.7944 21.8212 27.3505 21.8212ZM27.3505 30.7558C26.6595 30.757 25.9837 30.5533 25.4085 30.1702C24.8333 29.7872 24.3847 29.2422 24.1194 28.6041C23.8541 27.966 23.784 27.2636 23.918 26.5857C24.0521 25.9078 24.3843 25.2848 24.8725 24.7958C25.3607 24.3067 25.983 23.9734 26.6606 23.8382C27.3383 23.7029 28.0409 23.7717 28.6794 24.0359C29.318 24.3 29.8638 24.7477 30.2479 25.3222C30.6319 25.8967 30.8369 26.5722 30.8369 27.2632C30.8394 27.7229 30.7511 28.1786 30.5771 28.6041C30.403 29.0296 30.1467 29.4165 29.8228 29.7428C29.4989 30.069 29.1138 30.3281 28.6895 30.5051C28.2653 30.6822 27.8103 30.7737 27.3505 30.7745V30.7558Z"></path>
+                      <path d="M31.6929 38.3221H22.8458C21.0859 38.3188 19.3992 37.6178 18.1553 36.3728C16.9115 35.1278 16.2121 33.4404 16.2104 31.6805V22.8522C16.2121 21.0923 16.9115 19.4049 18.1553 18.1599C19.3992 16.9149 21.0859 16.2139 22.8458 16.2106H31.6929C33.4538 16.2122 35.1422 16.9125 36.3874 18.1577C37.6325 19.4028 38.3328 21.0912 38.3345 22.8522V31.6805C38.3328 33.4415 37.6325 35.1298 36.3874 36.375C35.1422 37.6202 33.4538 38.3204 31.6929 38.3221ZM22.8458 18.2786C21.6371 18.2819 20.4789 18.7635 19.6243 19.6182C18.7697 20.4728 18.2881 21.631 18.2848 22.8397V31.668C18.2881 32.8766 18.7697 34.0348 19.6243 34.8895C20.4789 35.7441 21.6371 36.2257 22.8458 36.229H31.6929C32.9015 36.2257 34.0597 35.7441 34.9144 34.8895C35.769 34.0348 36.2506 32.8766 36.2539 31.668V22.8522C36.2539 21.6413 35.7738 20.4799 34.9188 19.6226C34.0638 18.7653 32.9037 18.282 31.6929 18.2786H22.8458Z"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_234_123f">
+                        <rect width="22.1053" height="22.1053" fill="white" transform="translate(16.2104 16.2106)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg></a></div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <ul class="footer__bottom-list"> 
+              <li class="footer__bottom-item"> <a class="footer__bottom-link" href="" target="_blank">AGB  </a></li>
+              <li class="footer__bottom-item"> <a class="footer__bottom-link" href="" target="_blank">ЗАЩИТА ДАННЫХ</a></li>
+              <li class="footer__bottom-item"> <a class="footer__bottom-link" href="" target="_blank">ОТПЕЧАТОК</a></li>
+            </ul>
+            <div class="footer__bottom-right">
+              <div class="footer__copyr"> © SERVUSOFT GMBH 2022</div>
+              <div class="footer__developed mobile--hide">
+                <p class="footer__developed-text">Made by</p><a class="footer__developed-link" href="https://atstudio1.com/" target="_blank">A&T.team</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__developed desktop--hide">
+            <p class="footer__developed-text">Made by</p><a class="footer__developed-link" href="https://atstudio1.com/" target="_blank">A&T.team</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+<div class="mobile-menu">
+  <div class="mobile-menu__wrap">
+    <div class="mobile-menu__act mobile-menu__act--close">
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.79" fill-rule="evenodd" clip-rule="evenodd" d="M15 1.5L13.5 0L7.5 6L1.5 0L0 1.5L6 7.5L0 13.5L1.5 15L7.5 9L13.5 15L15 13.5L9 7.5L15 1.5Z" fill="#fff"></path>
+      </svg>
+    </div>
+    <div class="mobile-menu__body"><a class="header__logo single-anchors img-wrap" href="index.html#home">
+        <div><img src="assets/images/svg/logo.svg" alt=""></div></a>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__nav-list toogles">
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Как это работает</a></li>
+          <li class="mobile-menu__nav-item">
+            <div class="mobile-menu__nav-link toogles__item-title" data-toogles="1">
+              <p>Каталог</p>
+            </div>
+            <div class="toogles__item" data-toogles="1">
+              <div class="toogles__item-content">
+                <div>
+                  <div class="mobile-menu__drop"> 
+                    <div class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="">Nike</a></div>
+                    <div class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="">Zara </a></div>
+                    <div class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="">Adidas</a></div>
+                    <div class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="">GUCCI</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Распродажа</a></li>
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">FAQ</a></li>
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="main-screen__btns"> <a class="main-screen__btn btn" href="">Вход</a><a class="main-screen__btn btn main-screen__btn--active" href="">Регистрация</a></div>
+    </div>
+  </div>
+</div>
+<div class="popup-wrap" id="thank-you">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('thank-you')">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup__inner">
+      <div class="popup__simple-title simple-title">Спасибо!</div>
+      <div class="popup__content content"> 
+        <p>Ваша заявка успешно отправлена.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup-wrap" id="card">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('card')">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup__inner">
+      <div class="shops__goods-img img-wrap">
+        <div>
+          <picture><img src="assets/images/png/card-img.png" alt=""></picture>
+        </div>
+      </div>
+      <div class="popup__inner-info">
+        <div class="popup__simple-title simple-title simple-title--left">Доставка из Amazon</div>
+        <div class="shops__rating">      <span class="shops__rating-item shops__rating-item--active">$</span><span class="shops__rating-item shops__rating-item--active">$</span><span class="shops__rating-item">$</span><span class="shops__rating-item">$</span><span class="shops__rating-item">$</span></div>
+        <div class="shops__card-title">Категория: маркетплейс</div>
+        <div class="popup__content content"> 
+          <p>Самый большой гипермаркет планеты, в котором можно купить практически любой товар от чехла для телефона до крупногабаритной техники.</p>
+          <p><strong>Как заказывать на Амазон: правила и рекомендации</strong></p>
+          <p>Amazon – это огромный онлайн-гипермаркет, который предлагает клиентам миллионы разнообразных товаров. Здесь можно приобрести практически все что угодно: одежду, обувь, электронику, бытовую технику, компьютеры, программное обеспечение, книги, фильмы, пластинки и многое другое. Основная проблема заключается в том, что Амазон не доставляет товары в Украину. Разберемся, как обойти это ограничение.</p>
+          <p>Зарегистрироваться на Amazon можно совершенно бесплатно. Процедура стандартная, каких-то проблем у вас не возникнет. Она занимает максимум 5 минут, после чего вы сможете совершать покупки. Отметим, что у гипермаркета есть несколько филиалов в разных странах, например, в Британии, Германии и пр. Но самым популярным является американский сайт. Здесь больше всего товаров и самые приятные цены.</p>
+        </div>
+        <div class="shops__card-btns"> 
+          <div class="btn shops__card-btn">Как заказать?</div><a class="btn shops__card-btn shops__card-btn--active" href="">В магазин</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="js/app.js?v=1664954548924"></script></body>
+</html>
